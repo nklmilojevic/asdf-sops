@@ -37,9 +37,8 @@ get_platform() {
 
   case "$(uname | tr '[:upper:]' '[:lower:]')" in
   darwin) platform="darwin" ;;
-  linux) platform="Linux" ;;
-  openbsd) platform="OpenBSD" ;;
-  windows) platform="Windows" ;;
+  linux) platform="linux" ;;
+  windows) platform="windows" ;;
   *)
     fail "Platform '$(uname)' not supported!"
     ;;
